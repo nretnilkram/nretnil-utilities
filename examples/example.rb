@@ -60,7 +60,7 @@ puts "\n"
 
 string = "TrUe"
 
-puts "string=#{string}\n\n"
+puts "string=\"#{string}\"\n\n"
 
 puts "string.to_b"
 puts "# => " + string.to_b.to_s
@@ -72,7 +72,7 @@ puts "\n"
 
 string = "Television"
 
-puts "string=#{string}\n\n"
+puts "string=\"#{string}\"\n\n"
 
 puts "string.first"
 puts "# => " + string.first
@@ -92,11 +92,15 @@ puts "\n"
 
 puts "string.scramble"
 puts "# => " + string.scramble
+puts "\n"
+
+puts "string.valid_json?"
+puts "# => " + string.valid_json?.to_s
 puts "\n"
 
 string = "One two 3."
 
-puts "string=#{string}\n\n"
+puts "string=\"#{string}\"\n\n"
 
 puts "string.first"
 puts "# => " + string.first
@@ -116,6 +120,26 @@ puts "\n"
 
 puts "string.scramble"
 puts "# => " + string.scramble
+puts "\n"
+
+puts "string.valid_json?"
+puts "# => " + string.valid_json?.to_s
+puts "\n"
+
+string = "{ \"Once Octet\" }"
+
+puts "string=\'#{string}\'\n\n"
+
+puts "string.valid_json?"
+puts "# => " + string.valid_json?.to_s
+puts "\n"
+
+string = "{ \"foo\": \"bar\" }"
+
+puts "string=\'#{string}\'\n\n"
+
+puts "string.valid_json?"
+puts "# => " + string.valid_json?.to_s
 puts "\n"
 
 puts "```"

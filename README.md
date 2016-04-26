@@ -42,7 +42,7 @@ hash.json_pretty
 
 ```ruby
 
-string=TrUe
+string="TrUe"
 
 string.to_b
 # => true
@@ -50,7 +50,7 @@ string.to_b
 "F".to_b
 # => false
 
-string=Television
+string="Television"
 
 string.first
 # => T
@@ -62,12 +62,15 @@ string.last
 # => n
 
 string.shuffle
-# => vseTeiionl
+# => Teelisvion
 
 string.scramble
-# => Tiosveieln
+# => Tviilseoen
 
-string=One two 3.
+string.valid_json?
+# => false
+
+string="One two 3."
 
 string.first
 # => O
@@ -79,9 +82,22 @@ string.last
 # => .
 
 string.shuffle
-# => O. 3netw o
+# => eOwno t3. 
 
 string.scramble
-# => Oton3 we .
+# => O toe3nw .
+
+string.valid_json?
+# => false
+
+string='{ "Once Octet" }'
+
+string.valid_json?
+# => false
+
+string='{ "foo": "bar" }'
+
+string.valid_json?
+# => true
 
 ```
