@@ -47,6 +47,9 @@ string=TrUe
 string.to_b
 # => true
 
+"F".to_b
+# => false
+
 string=Television
 
 string.first
@@ -59,10 +62,10 @@ string.last
 # => n
 
 string.shuffle
-# => Tveeoslini
+# => vseTeiionl
 
 string.scramble
-# => Tlovisieen
+# => Tiosveieln
 
 string=One two 3.
 
@@ -76,9 +79,9 @@ string.last
 # => .
 
 string.shuffle
-# => .3Owot e n
+# => O. 3netw o
 
 string.scramble
-# => O n3 towe.
+# => Oton3 we .
 
 ```
