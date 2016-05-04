@@ -1,4 +1,4 @@
-<h2>Version: 0.0.1</h2>
+<h2>Version: 0.0.2</h2>
 
 <h1>Usage:</h1>
 
@@ -38,6 +38,30 @@ hash.json_pretty
 
 ```
 
+<h3>Integer</h3>
+
+```ruby
+
+1234567890.to_human
+# => 1.15GB
+
+1234567890.to_human(5)
+# => 1.14978GB
+
+8549176320.to_human(1)
+# => 8.0GB
+
+12.to_human
+# => 12B
+
+5234566788764321.to_human
+# => 4.65PB
+
+1234567890987654321.to_human
+# => 1.07EB
+
+```
+
 <h3>String</h3>
 
 ```ruby
@@ -62,10 +86,10 @@ string.last
 # => n
 
 string.shuffle
-# => Teelisvion
+# => veilsnioeT
 
 string.scramble
-# => Tviilseoen
+# => Tlioieevsn
 
 string.valid_json?
 # => false
@@ -82,10 +106,10 @@ string.last
 # => .
 
 string.shuffle
-# => eOwno t3. 
+# => O n toew.3
 
 string.scramble
-# => O toe3nw .
+# => Ow3ent  o.
 
 string.valid_json?
 # => false

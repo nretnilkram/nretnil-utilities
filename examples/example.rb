@@ -51,6 +51,41 @@ puts "```"
 puts "\n"
 
 
+puts "<h3>Integer</h3>"
+
+puts "\n"
+
+puts "```ruby"
+puts "\n"
+
+puts "1234567890.to_human"
+puts "# => " + 1234567890.to_human
+puts "\n"
+
+puts "1234567890.to_human(5)"
+puts "# => " + 1234567890.to_human(5)
+puts "\n"
+
+puts "8549176320.to_human(1)"
+puts "# => " + 8549176320.to_human(1)
+puts "\n"
+
+puts "12.to_human"
+puts "# => " + 12.to_human
+puts "\n"
+
+puts "5234566788764321.to_human"
+puts "# => " + 5234566788764321.to_human
+puts "\n"
+
+puts "1234567890987654321.to_human"
+puts "# => " + 1234567890987654321.to_human
+puts "\n"
+
+puts "```"
+puts "\n"
+
+
 puts "<h3>String</h3>"
 
 puts "\n"
