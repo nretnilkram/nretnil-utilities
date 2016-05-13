@@ -1,17 +1,21 @@
+#!/bin/env ruby
+# encoding: UTF-8
+# frozen_string_literal: true
+
 require 'rubygems'
 
+# String Class Utilities
 class String
-
   ####
   # Name: to_b
-  # Description: Converts string to boolean 
+  # Description: Converts string to boolean
   # Arguments: string
-  # Response: true, false, or nil 
+  # Response: true, false, or nil
   ####
   def to_b
-    return true if ( self.downcase == "true" || self.downcase == "t" )
-    return false if ( self.downcase == "false" || self.downcase == "f" )
-    return nil
+    return true if casecmp('true').zero? || casecmp('t').zero?
+    return false if casecmp('false').zero? || casecmp('f').zero?
+    nil
   end
 
   ####
@@ -21,7 +25,7 @@ class String
   # Response: string
   ####
   def shuffle
-    self.split('').shuffle.join
+    split('').shuffle.join
   end
 
   ####
@@ -31,7 +35,7 @@ class String
   # Response: string
   ####
   def first
-    self[0,1]
+    [0, 1]
   end
 
   ####
@@ -42,7 +46,7 @@ class String
   ####
   def last
     length = self.length
-    self[length-1,length]
+    self[length - 1, length]
   end
 
   ####
@@ -53,7 +57,7 @@ class String
   ####
   def middle
     length = self.length
-    length > 2 ? self[1,length-2] : ""
+    length > 2 ? self[1, length - 2] : ''
   end
 
   ####
@@ -63,7 +67,7 @@ class String
   # Response: string
   ####
   def scramble
-    self.length > 2 ? self.first + self.middle.shuffle + self.last : self
+    length > 2 ? first + middle.shuffle + last : self
   end
 
   ####
@@ -73,12 +77,9 @@ class String
   # Response: boolean
   ####
   def valid_json?
-    begin
-      JSON.parse(self)
-      return true
-    rescue JSON::ParserError => e
-      return false
-    end
+    JSON.parse(self)
+    return true
+  rescue JSON::ParserError
+    return false
   end
-
 end

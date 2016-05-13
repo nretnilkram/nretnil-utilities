@@ -1,4 +1,4 @@
-<h2>Version: 0.0.2</h2>
+<h2>Version: 0.0.3</h2>
 
 <h1>Usage:</h1>
 
@@ -8,7 +8,7 @@
 
 array=["fishing", "bait", "worm"]
 
-array.include? fish  # This is a build in Array funtion.
+array.include? fish  # This is a built in Array function.
 # => false
 
 array.partial_include? fish
@@ -86,10 +86,10 @@ string.last
 # => n
 
 string.shuffle
-# => veilsnioeT
+# => oneiseTlvi
 
 string.scramble
-# => Tlioieevsn
+# => Tievsoeiln
 
 string.valid_json?
 # => false
@@ -106,10 +106,10 @@ string.last
 # => .
 
 string.shuffle
-# => O n toew.3
+# => O 3 nweot.
 
 string.scramble
-# => Ow3ent  o.
+# => Oo we 3nt.
 
 string.valid_json?
 # => false
