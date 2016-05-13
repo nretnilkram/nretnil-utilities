@@ -1,7 +1,11 @@
+#!/bin/env ruby
+# encoding: UTF-8
+# frozen_string_literal: true
+
 require 'rubygems'
 
+# Integer Class Utilities
 class Integer
-
   KB = 1024
   SIZE_MAPPING = {
     'B'  => KB,
@@ -11,7 +15,7 @@ class Integer
     'TB' => KB * KB * KB * KB * KB,
     'PB' => KB * KB * KB * KB * KB * KB,
     'EB' => KB * KB * KB * KB * KB * KB * KB
-  }
+  }.freeze
 
   ####
   # Name: to_human
@@ -20,10 +24,7 @@ class Integer
   # Response: string
   ####
   def to_human(digits = 2)
-    if self < KB
-      return "#{self}B"
-    end
-    SIZE_MAPPING.each_pair { |e, s| return "#{(self.to_f / (s / KB)).round(digits)}#{e}" if self < s }
+    return "#{self}B" if self < KB
+    SIZE_MAPPING.each_pair { |e, s| return "#{(to_f / (s / KB)).round(digits)}#{e}" if self < s }
   end
-
 end
