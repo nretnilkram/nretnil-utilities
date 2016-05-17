@@ -178,5 +178,49 @@ puts 'string.valid_json?'
 puts '# => ' + string.valid_json?.to_s
 puts "\n"
 
+string = '7*d8f7R6$5H@~32'
+
+puts "string=\'#{string}\'\n\n"
+
+puts 'string.sym?'
+puts '# => ' + string.sym?.to_s
+puts "\n"
+
+string = '78d8f7R6k5H4g2'
+
+puts "string=\'#{string}\'\n\n"
+
+puts 'string.sym?'
+puts '# => ' + string.sym?.to_s
+puts "\n"
+
+puts 'string.uuid?'
+puts '# => ' + string.uuid?.to_s
+puts "\n"
+
+string = '0b5865e9-0262-6238-1427-35b77c466ebd'
+
+puts "string=\'#{string}\'\n\n"
+
+puts 'string.uuid?'
+puts '# => ' + string.uuid?.to_s
+puts "\n"
+
+string = '0865e9-026-6238-127-35b77c46bd'
+
+puts "string=\'#{string}\'\n\n"
+
+puts 'string.uuid?'
+puts '# => ' + string.uuid?.to_s
+puts "\n"
+
+string = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
+
+puts "string=\'#{string}\'\n\n"
+
+puts 'string.uuid?'
+puts '# => ' + string.uuid?.to_s
+puts "\n"
+
 puts '```'
 puts "\n"

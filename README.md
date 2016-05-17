@@ -1,4 +1,4 @@
-<h2>Version: 0.0.3</h2>
+<h2>Version: 0.0.4</h2>
 
 <h1>Usage:</h1>
 
@@ -86,10 +86,10 @@ string.last
 # => n
 
 string.shuffle
-# => oneiseTlvi
+# => seiTovline
 
 string.scramble
-# => Tievsoeiln
+# => Tieovslien
 
 string.valid_json?
 # => false
@@ -106,10 +106,10 @@ string.last
 # => .
 
 string.shuffle
-# => O 3 nweot.
+# => n3.o wO et
 
 string.scramble
-# => Oo we 3nt.
+# => O e 3wont.
 
 string.valid_json?
 # => false
@@ -123,5 +123,33 @@ string='{ "foo": "bar" }'
 
 string.valid_json?
 # => true
+
+string='7*d8f7R6$5H@~32'
+
+string.sym?
+# => true
+
+string='78d8f7R6k5H4g2'
+
+string.sym?
+# => false
+
+string.uuid?
+# => false
+
+string='0b5865e9-0262-6238-1427-35b77c466ebd'
+
+string.uuid?
+# => true
+
+string='0865e9-026-6238-127-35b77c46bd'
+
+string.uuid?
+# => false
+
+string='xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
+
+string.uuid?
+# => false
 
 ```

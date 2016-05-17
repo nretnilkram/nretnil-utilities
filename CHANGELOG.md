@@ -1,3 +1,7 @@
+<h4>0.0.4</h4>
+
+* added string.sym? and string.uuid?
+
 <h4>0.0.3</h4>
 
 * rubocop changes

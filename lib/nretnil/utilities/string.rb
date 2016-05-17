@@ -35,7 +35,7 @@ class String
   # Response: string
   ####
   def first
-    [0, 1]
+    self[0, 1]
   end
 
   ####
@@ -81,5 +81,25 @@ class String
     return true
   rescue JSON::ParserError
     return false
+  end
+
+  ####
+  # Name: uuid?
+  # Description: retuns boolean of whether string is a valid uuid.
+  # Arguments: string
+  # Response: boolean
+  ####
+  def uuid?
+    !match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/).nil?
+  end
+
+  ####
+  # Name: sym?
+  # Description: retuns boolean of whether string does not contains only letters and numbers.
+  # Arguments: string
+  # Response: boolean
+  ####
+  def sym?
+    !match(/[^a-zA-Z0-9]/).nil?
   end
 end
