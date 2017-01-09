@@ -86,10 +86,10 @@ string.last
 # => n
 
 string.shuffle
-# => seiTovline
+# => vTenlseiio
 
 string.scramble
-# => Tieovslien
+# => Tvsleioein
 
 string.valid_json?
 # => false
@@ -106,15 +106,15 @@ string.last
 # => .
 
 string.shuffle
-# => n3.o wO et
+# => onwte  O3.
 
 string.scramble
-# => O e 3wont.
+# => O tw3 oen.
 
 string.valid_json?
 # => false
 
-string='{ "Once Octet" }'
+string='{ "One Octet" }'
 
 string.valid_json?
 # => false

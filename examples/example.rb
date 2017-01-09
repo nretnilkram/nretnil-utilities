@@ -162,7 +162,7 @@ puts 'string.valid_json?'
 puts '# => ' + string.valid_json?.to_s
 puts "\n"
 
-string = '{ "Once Octet" }'
+string = '{ "One Octet" }'
 
 puts "string=\'#{string}\'\n\n"
 
