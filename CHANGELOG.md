@@ -1,3 +1,7 @@
+<h4>0.0.5</h4>
+
+* added string.proper
+
 <h4>0.0.4</h4>
 
 * added string.sym? and string.uuid?

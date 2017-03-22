@@ -134,9 +134,29 @@ puts 'string.valid_json?'
 puts '# => ' + string.valid_json?.to_s
 puts "\n"
 
+string = 'jOhN sMiTh'
+
+puts "string=\"#{string}\"\n\n"
+
+puts 'string.proper'
+puts '# => ' + string.proper
+puts "\n"
+
+string = 'nretnil kram'
+
+puts "string=\"#{string}\"\n\n"
+
+puts 'string.proper'
+puts '# => ' + string.proper
+puts "\n"
+
 string = 'One two 3.'
 
 puts "string=\"#{string}\"\n\n"
+
+puts 'string.proper'
+puts '# => ' + string.proper
+puts "\n"
 
 puts 'string.first'
 puts '# => ' + string.first

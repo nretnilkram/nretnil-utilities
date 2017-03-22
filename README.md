@@ -1,4 +1,4 @@
-<h2>Version: 0.0.4</h2>
+<h2>Version: 0.0.5</h2>
 
 <h1>Usage:</h1>
 
@@ -86,15 +86,28 @@ string.last
 # => n
 
 string.shuffle
-# => vTenlseiio
+# => velTesoini
 
 string.scramble
-# => Tvsleioein
+# => Teviiolsen
 
 string.valid_json?
 # => false
 
+string="jOhN sMiTh"
+
+string.proper
+# => John Smith
+
+string="nretnil kram"
+
+string.proper
+# => Nretnil Kram
+
 string="One two 3."
+
+string.proper
+# => One Two 3.
 
 string.first
 # => O
@@ -106,10 +119,10 @@ string.last
 # => .
 
 string.shuffle
-# => onwte  O3.
+# => n3t.Oe o w
 
 string.scramble
-# => O tw3 oen.
+# => Ot  nwe3o.
 
 string.valid_json?
 # => false

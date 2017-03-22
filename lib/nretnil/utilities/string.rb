@@ -102,4 +102,14 @@ class String
   def sym?
     !match(/[^a-zA-Z0-9]/).nil?
   end
+
+  ####
+  # Name: proper
+  # Description: Converts string by capitalizing the first letter of each word.
+  # Arguments: string
+  # Response: string
+  ####
+  def proper
+    split.map(&:capitalize).join(' ')
+  end
 end
