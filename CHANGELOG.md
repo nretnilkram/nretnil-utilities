@@ -1,3 +1,7 @@
+<h4>0.0.6</h4>
+
+* added timing function
+
 <h4>0.0.5</h4>
 
 * added string.proper

@@ -244,3 +244,33 @@ puts "\n"
 
 puts '```'
 puts "\n"
+
+puts '<h3>Time</h3>'
+
+puts "\n"
+
+puts '```ruby'
+puts "\n"
+
+puts 'timing'
+puts '# => ' + timing.to_s
+puts "\n"
+
+puts 'timing(12.3456789)'
+puts '# => ' + timing(12.3456789)
+puts "\n"
+
+puts 'timing(123)'
+puts '# => ' + timing(123)
+puts "\n"
+
+puts 'timing(1_234.56789)'
+puts '# => ' + timing(1_234.56789)
+puts "\n"
+
+puts 'timing(12_345)'
+puts '# => ' + timing(12_345)
+puts "\n"
+
+puts '```'
+puts "\n"

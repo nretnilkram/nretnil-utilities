@@ -1,4 +1,4 @@
-<h2>Version: 0.0.5</h2>
+<h2>Version: 0.0.6</h2>
 
 <h1>Usage:</h1>
 
@@ -86,10 +86,10 @@ string.last
 # => n
 
 string.shuffle
-# => velTesoini
+# => eeoilnisTv
 
 string.scramble
-# => Teviiolsen
+# => Teilosievn
 
 string.valid_json?
 # => false
@@ -119,10 +119,10 @@ string.last
 # => .
 
 string.shuffle
-# => n3t.Oe o w
+# => o e3O wtn.
 
 string.scramble
-# => Ot  nwe3o.
+# => O wno et3.
 
 string.valid_json?
 # => false
@@ -164,5 +164,26 @@ string='xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
 
 string.uuid?
 # => false
+
+```
+
+<h3>Time</h3>
+
+```ruby
+
+timing
+# => 2017-03-23 10:26:50 -0400
+
+timing(12.3456789)
+# => 12.35 seconds
+
+timing(123)
+# => 2.05 minutes
+
+timing(1_234.56789)
+# => 20.58 minutes
+
+timing(12_345)
+# => 3.43 hours
 
 ```

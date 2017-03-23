@@ -20,7 +20,7 @@ class Integer
   ####
   # Name: to_human
   # Description: Converts integer into Human readable string size assumeing one KB is 1024 bytes
-  # Arguments: integer
+  # Arguments: [optional] integer - number of digits
   # Response: string
   ####
   def to_human(digits = 2)
