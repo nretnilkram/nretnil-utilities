@@ -86,10 +86,10 @@ string.last
 # => n
 
 string.shuffle
-# => eeoilnisTv
+# => nivTsileeo
 
 string.scramble
-# => Teilosievn
+# => Tevilieosn
 
 string.valid_json?
 # => false
@@ -119,10 +119,10 @@ string.last
 # => .
 
 string.shuffle
-# => o e3O wtn.
+# => e3toO nw.
 
 string.scramble
-# => O wno et3.
+# => O3e tno w.
 
 string.valid_json?
 # => false
@@ -172,18 +172,18 @@ string.uuid?
 ```ruby
 
 timing
-# => 2017-03-23 10:26:50 -0400
+# => 2017-03-23 10:44:27 -0400
 
-timing(12.3456789)
-# => 12.35 seconds
+timing(12.8345679)
+# => 13 seconds
 
 timing(123)
-# => 2.05 minutes
+# => 02 minutes 03 seconds
 
 timing(1_234.56789)
-# => 20.58 minutes
+# => 20 minutes 35 seconds
 
 timing(12_345)
-# => 3.43 hours
+# => 03 hours 25 minutes 45 seconds
 
 ```

@@ -256,8 +256,8 @@ puts 'timing'
 puts '# => ' + timing.to_s
 puts "\n"
 
-puts 'timing(12.3456789)'
-puts '# => ' + timing(12.3456789)
+puts 'timing(12.8345679)'
+puts '# => ' + timing(12.8345679)
 puts "\n"
 
 puts 'timing(123)'
