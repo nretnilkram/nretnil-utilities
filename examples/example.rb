@@ -12,7 +12,7 @@ puts "\n"
 puts '```ruby'
 puts "\n"
 
-array = %w(fishing bait worm)
+array = %w[fishing bait worm]
 
 puts "array=#{array}\n\n"
 
@@ -282,12 +282,20 @@ puts "\n"
 puts '```ruby'
 puts "\n"
 
-puts 'fifty_fifty'
-puts '# => ' + fifty_fifty.to_s
+puts '5.times do'
+puts '  fifty_fifty'
+puts 'end'
+5.times do
+  puts '# => ' + fifty_fifty.to_s
+end
 puts "\n"
 
-puts 'coin_flip'
-puts '# => ' + coin_flip
+puts '5.times do'
+puts '  coin_flip'
+puts 'end'
+5.times do
+  puts '# => ' + coin_flip
+end
 puts "\n"
 
 puts '```'
