@@ -4,4 +4,4 @@
 
 source 'https://rubygems.org'
 
-gem 'nretnil-utilites', git: 'https://github.com/nretnilkram/nretnil-translate'
+gem 'nretnil-utilities', git: 'https://github.com/nretnilkram/nretnil-utilities'
