@@ -86,10 +86,10 @@ string.last
 # => n
 
 string.shuffle
-# => nivTsileeo
+# => seeoviTiln
 
 string.scramble
-# => Tevilieosn
+# => Tieioelvsn
 
 string.valid_json?
 # => false
@@ -119,10 +119,10 @@ string.last
 # => .
 
 string.shuffle
-# => e3toO nw.
+# => e o3wtO n.
 
 string.scramble
-# => O3e tno w.
+# => Ow 3eto n.
 
 string.valid_json?
 # => false
@@ -172,7 +172,7 @@ string.uuid?
 ```ruby
 
 timing
-# => 2017-03-23 10:44:27 -0400
+# => 2017-04-18 09:46:40 -0400
 
 timing(12.8345679)
 # => 13 seconds
@@ -185,5 +185,17 @@ timing(1_234.56789)
 
 timing(12_345)
 # => 03 hours 25 minutes 45 seconds
+
+```
+
+<h3>Utilities</h3>
+
+```ruby
+
+fifty_fifty
+# => true
+
+coin_flip
+# => tails
 
 ```

@@ -1,3 +1,7 @@
+<h4>0.0.7</h4>
+
+* added fifty_fifty and coin_flip functions
+
 <h4>0.0.6</h4>
 
 * added timing function

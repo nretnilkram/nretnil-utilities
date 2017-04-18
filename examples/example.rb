@@ -274,3 +274,21 @@ puts "\n"
 
 puts '```'
 puts "\n"
+
+puts '<h3>Utilities</h3>'
+
+puts "\n"
+
+puts '```ruby'
+puts "\n"
+
+puts 'fifty_fifty'
+puts '# => ' + fifty_fifty.to_s
+puts "\n"
+
+puts 'coin_flip'
+puts '# => ' + coin_flip
+puts "\n"
+
+puts '```'
+puts "\n"
