@@ -11,8 +11,17 @@ require 'rubygems'
 # Response: boolean
 ####
 def fifty_fifty
-  return true if rand.round.zero?
-  false
+    [true, false].sample
+end
+
+####
+# Name: one_third
+# Description: returns true approximately one third of the time.
+# Arguments: none
+# Response: boolean
+####
+def one_third
+  [false, true, false].sample
 end
 
 ####
@@ -22,6 +31,5 @@ end
 # Response: string
 ####
 def coin_flip
-  return 'heads' if rand.round.zero?
-  'tails'
+  %w['heads tails'].sample
 end

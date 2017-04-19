@@ -1,4 +1,4 @@
-<h2>Version: 0.0.7</h2>
+<h2>Version: 0.0.8</h2>
 
 <h1>Usage:</h1>
 
@@ -192,22 +192,34 @@ timing(12_345)
 
 ```ruby
 
-5.times do
+6.times do
   fifty_fifty
 end
-# => true
-# => true
 # => false
+# => false
+# => false
+# => true
 # => true
 # => false
 
-5.times do
+6.times do
+  one_third
+end
+# => false
+# => true
+# => false
+# => false
+# => false
+# => true
+
+6.times do
   coin_flip
 end
-# => tails
-# => tails
-# => heads
-# => heads
-# => heads
+# => tails'
+# => 'heads
+# => tails'
+# => 'heads
+# => tails'
+# => 'heads
 
 ```

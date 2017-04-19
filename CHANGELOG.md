@@ -1,3 +1,7 @@
+<h4>0.0.8</h4>
+
+* added one_third function
+
 <h4>0.0.7</h4>
 
 * added fifty_fifty and coin_flip functions

@@ -282,18 +282,26 @@ puts "\n"
 puts '```ruby'
 puts "\n"
 
-puts '5.times do'
+puts '6.times do'
 puts '  fifty_fifty'
 puts 'end'
-5.times do
+6.times do
   puts '# => ' + fifty_fifty.to_s
 end
 puts "\n"
 
-puts '5.times do'
+puts '6.times do'
+puts '  one_third'
+puts 'end'
+6.times do
+  puts '# => ' + one_third.to_s
+end
+puts "\n"
+
+puts '6.times do'
 puts '  coin_flip'
 puts 'end'
-5.times do
+6.times do
   puts '# => ' + coin_flip
 end
 puts "\n"
