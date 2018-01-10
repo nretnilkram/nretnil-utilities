@@ -1,5 +1,4 @@
 #!/bin/env ruby
-# encoding: UTF-8
 # frozen_string_literal: true
 
 require 'rubygems'
@@ -11,7 +10,7 @@ require 'rubygems'
 # Response: boolean
 ####
 def fifty_fifty
-    [true, false].sample
+  [true, false].sample
 end
 
 ####

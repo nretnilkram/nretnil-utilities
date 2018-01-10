@@ -1,5 +1,4 @@
 #!/bin/env ruby
-# encoding: UTF-8
 # frozen_string_literal: true
 
 $LOAD_PATH.push File.expand_path('../lib', __FILE__)
