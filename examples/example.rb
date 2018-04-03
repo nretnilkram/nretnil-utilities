@@ -31,6 +31,14 @@ puts 'array.partial_include? shark'
 puts '# => ' + array.partial_include?('shark').to_s
 puts "\n"
 
+array = [{ foo: 'bar' }, { bar: 'baz' }, { baz: 'foo' }]
+
+puts "array=#{array}\n\n"
+
+puts 'array.json_pretty'
+puts '# => ' + array.json_pretty
+puts "\n"
+
 puts '```'
 puts "\n"
 

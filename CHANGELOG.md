@@ -1,3 +1,7 @@
+<h4>0.0.9</h4>
+
+* added json_pretty to Array
+
 <h4>0.0.8</h4>
 
 * added one_third function

@@ -77,9 +77,9 @@ class String
   ####
   def valid_json?
     JSON.parse(self)
-    return true
+    true
   rescue JSON::ParserError
-    return false
+    false
   end
 
   ####

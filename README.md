@@ -1,4 +1,4 @@
-<h2>Version: 0.0.8</h2>
+<h2>Version: 0.0.9</h2>
 
 <h1>Usage:</h1>
 
@@ -19,6 +19,21 @@ array.partial_include? shi
 
 array.partial_include? shark
 # => false
+
+array=[{:foo=>"bar"}, {:bar=>"baz"}, {:baz=>"foo"}]
+
+array.json_pretty
+# => [
+  {
+    "foo": "bar"
+  },
+  {
+    "bar": "baz"
+  },
+  {
+    "baz": "foo"
+  }
+]
 
 ```
 
@@ -86,10 +101,10 @@ string.last
 # => n
 
 string.shuffle
-# => nTisloveei
+# => eveosiliTn
 
 string.scramble
-# => Toveisieln
+# => Tileesoivn
 
 string.valid_json?
 # => false
@@ -119,10 +134,10 @@ string.last
 # => .
 
 string.shuffle
-# => 3n .eOtow
+# => 3O.e  notw
 
 string.scramble
-# => O oe ntw3.
+# => Oo3netw  .
 
 string.valid_json?
 # => false
@@ -172,7 +187,7 @@ string.uuid?
 ```ruby
 
 timing
-# => 2017-04-18 10:04:15 -0400
+# => 2018-04-03 15:00:30 -0400
 
 timing(12.8345679)
 # => 13 seconds
@@ -195,9 +210,9 @@ timing(12_345)
 6.times do
   fifty_fifty
 end
+# => true
 # => false
-# => false
-# => false
+# => true
 # => true
 # => true
 # => false
@@ -206,8 +221,8 @@ end
   one_third
 end
 # => false
-# => true
 # => false
+# => true
 # => false
 # => false
 # => true
@@ -216,10 +231,10 @@ end
   coin_flip
 end
 # => tails'
-# => 'heads
 # => tails'
 # => 'heads
-# => tails'
+# => 'heads
+# => 'heads
 # => 'heads
 
 ```
