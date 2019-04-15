@@ -3,6 +3,8 @@
 
 require 'rubygems'
 
+COIN_SIDES = %w[heads tails].freeze
+
 ####
 # Name: fifty_fifty
 # Description: returns true or false
@@ -30,5 +32,5 @@ end
 # Response: string
 ####
 def coin_flip
-  %w['heads tails'].sample
+  COIN_SIDES.sample
 end

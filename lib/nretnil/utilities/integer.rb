@@ -7,7 +7,7 @@ require 'rubygems'
 class Integer
   KB = 1024
   SIZE_MAPPING = {
-    'B'  => KB,
+    'B' => KB,
     'KB' => KB * KB,
     'MB' => KB * KB * KB,
     'GB' => KB * KB * KB * KB,
@@ -24,6 +24,7 @@ class Integer
   ####
   def to_human(digits = 2)
     return "#{self}B" if self < KB
+
     SIZE_MAPPING.each_pair { |e, s| return "#{(to_f / (s / KB)).round(digits)}#{e}" if self < s }
   end
 end

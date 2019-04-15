@@ -3,6 +3,7 @@
 
 require 'rubygems'
 
+DAY_LABEL = 'days'.freeze
 HOUR_LABEL = 'hours'.freeze
 MIN_LABEL = 'minutes'.freeze
 SEC_LABEL = 'seconds'.freeze
@@ -15,7 +16,9 @@ SEC_LABEL = 'seconds'.freeze
 ####
 def timing(seconds = nil)
   return Time.now if seconds.nil?
-  return Time.at(seconds.to_f.round(0)).utc.strftime("%H #{HOUR_LABEL} %M #{MIN_LABEL} %S #{SEC_LABEL}") if seconds > 3600
-  return Time.at(seconds.to_f.round(0)).utc.strftime("%M #{MIN_LABEL} %S #{SEC_LABEL}") if seconds > 60
+  return Time.at(seconds.to_f.round(0)).utc.strftime("%-d #{DAY_LABEL} %-H #{HOUR_LABEL} %-M #{MIN_LABEL} %-S #{SEC_LABEL}").strip if seconds > 86_400
+  return Time.at(seconds.to_f.round(0)).utc.strftime("%-H #{HOUR_LABEL} %-M #{MIN_LABEL} %-S #{SEC_LABEL}").strip if seconds > 3600
+  return Time.at(seconds.to_f.round(0)).utc.strftime("%-M #{MIN_LABEL} %-S #{SEC_LABEL}").strip if seconds > 60
+
   Time.at(seconds.to_f.round(0)).utc.strftime("%S #{SEC_LABEL}")
 end

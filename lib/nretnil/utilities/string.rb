@@ -14,6 +14,7 @@ class String
   def to_b
     return true if casecmp('true').zero? || casecmp('t').zero?
     return false if casecmp('false').zero? || casecmp('f').zero?
+
     nil
   end
 

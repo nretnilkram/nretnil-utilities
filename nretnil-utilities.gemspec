@@ -25,6 +25,8 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = '>= 0.0.0'
 
+  s.add_development_dependency 'rspec'
+
   s.files         = Dir.glob('{bin,lib}/**/*') + %w[LICENSE README.md CHANGELOG.md]
   s.rdoc_options  = ['--charset=UTF-8']
   s.require_paths = ['lib']
